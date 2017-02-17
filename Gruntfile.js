@@ -27,6 +27,7 @@ browserSync: {
         src : 'sass/*css/*.css'
     },
     options: {
+    	watchTask: true,
         server: {
             baseDir: "./"
         }
@@ -49,5 +50,5 @@ browserSync: {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-browser-sync');
   // Default task(s).
-  grunt.registerTask('default', ["sass","watch","imagemin","browserSync"]);
+  grunt.registerTask('default', ["browserSync","imagemin","sass","watch"]);
 };

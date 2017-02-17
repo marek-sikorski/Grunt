@@ -38,7 +38,7 @@ header {
         display: block; }
         header > nav > ul > li > a:hover {
           background-color: #563636;
-          color: blue; }
+          color: red; }
 
 .row:before, .row:after {
   content: "";
